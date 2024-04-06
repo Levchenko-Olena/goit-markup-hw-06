@@ -1079,7 +1079,7 @@ button {
                 background-image: linear-gradient(rgba(17, 17, 17, 0.4),
                                 rgba(17, 17, 17, 0.4)),
                         url(../images-adapt/Dark-bg-plan-2x-min.jpg);
-        }
+        }}
         .hero-title {
                 font-size: 56px;
                 line-height: 1.07;
@@ -1138,6 +1138,7 @@ button {
 
 }
 
+
 @media screen and (min-width: 1158px) {
         .container {
                 max-width: 1158px;
@@ -1171,7 +1172,7 @@ button {
                                 background-image: linear-gradient(rgba(17, 17, 17, 0.4),
                                                 rgba(17, 17, 17, 0.4)),
                                         url(../images-adapt/Dark-bg-deks-2x-min.jpg);
-                        }
+                        }}
 
         .advantages {
                 padding: 120px 0;
@@ -1246,4 +1247,4 @@ button {
         .portfolio-card {
                 width: calc((100% - 48px) / 3);
         }
-                }}}
+                }
