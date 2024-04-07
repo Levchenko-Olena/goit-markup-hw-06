@@ -294,8 +294,9 @@ button {
 }
 
 .advantages-list {
-        /*display: flex;*/
-        gap: 24px;
+        display: flex;
+        gap: 72px;
+        flex-direction: column;
 }
 
 .advantages-list-text {
@@ -380,7 +381,7 @@ button {
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        gap: 24px;
+        gap: 72px;
 
 
 }
@@ -541,6 +542,7 @@ button {
 
 .footer-wrap-logo {
         /*margin-right: 120px*/
+        margin-bottom: 72px;
 }
 
 .footer-link-logo {
@@ -570,7 +572,7 @@ button {
         letter-spacing: 0.02em;
         color: #f4f4fd;
         max-width: 264px;
-        margin-bottom: 72px;
+      /*  margin-bottom: 72px;*/
 
 }
 
@@ -1027,9 +1029,10 @@ button {
 @media screen and (min-width: 768px) {
         .container {
                 max-width: 768px;
-                padding-top: 24px;
-                padding-bottom: 24px;
-                padding-left: 16px;
+                /*padding-top: 24px;
+                padding-bottom: 24px;*/
+                /*padding-left: 16px;*/
+                padding: 0;
         }
 
         .full-nav-navi-logo {
@@ -1088,15 +1091,19 @@ button {
 
         .advantages-list {
                 display: flex;
-                gap: 24px;
+                gap:72px 24px;
                 flex-wrap: wrap;
 
 
         }
+        .advantages-title{
+        text-align: start;
+        margin-bottom: 8px;
+        }
 
         .advantages-list-text {
                 width: 100%;
-                padding-right: 24px;
+                
                 width: calc((100% - 24px) / 2);
 
         }
@@ -1114,7 +1121,8 @@ button {
                 display: flex;
                 flex-wrap: wrap;
                 gap: 72px;
-                justify-content: center;
+                justify-content: flex-start;
+                padding-left: 108px;
                 /* align-items: baseline;*/
         }
 
@@ -1135,7 +1143,34 @@ button {
                 justify-content: left;
                 align-items: center;
         }
+                .footer-input{
+                        margin-bottom: 0;
+                }
+.footer-end{
+        padding-top: 96px;
+        padding-bottom: 96px;
+}
+.our-team-list-card{
+        gap: 64px;
+}
+ .full-link-btn {
+         padding: 24px 0;
+ }
 
+ .but::after {
+         bottom: -1px;
+         content: '';
+         width: 100%;
+         left: 0;
+         bottom: -1px;
+         position: absolute;
+         display: block;
+         background-color: #404bbf;
+         border-radius: 2px;
+         width: 48px;
+         height: 4px;
+         transform: translateY(-50%);
+ }
 }
 
 
@@ -1143,6 +1178,8 @@ button {
         .container {
                 max-width: 1158px;
                 padding-left: 15px;
+                padding-top: 0;
+                padding-bottom: 0;
                 padding-right: 15px;
 
         }
@@ -1247,4 +1284,27 @@ button {
         .portfolio-card {
                 width: calc((100% - 48px) / 3);
         }
-                }
+   .full-link-btn{
+        padding: 24px 0;
+   }
+.but::after {
+        bottom: -1px;
+        content: '';
+        width: 100%;
+        left: 0;
+        bottom: -1px;
+        position: absolute;
+        display: block;
+        background-color: #404bbf;
+        border-radius: 2px;
+        width: 48px;
+        height: 4px;
+        transform: translateY(-50%);
+}
+.footer-text{
+        margin-bottom: 0;
+}
+.footer-list-icon{
+        margin-bottom: 0;
+}
+}
